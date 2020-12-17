@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/halfLive"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/initialMass"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/startLabel"
+        android:onClick="onClickStart"
+        ></Button>
+
+
+
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stopLabel"
+        android:onClick="onClickStop"
+        ></Button>
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClickReset"
+        android:text="@string/resetLabel"></Button>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvMass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mass"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Period"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+
+</LinearLayout>
